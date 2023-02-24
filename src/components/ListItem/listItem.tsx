@@ -16,7 +16,7 @@ export const ListItem = ({ item, onChange }: Props) => {
             <input 
                 type = "checkbox" 
                 checked={isChecked}
-                onChange={e => onChange(item.id, e.target.checked)}
+                onChange={e => setIsChecked(e.target.checked)}
             />
             <label>{item.description}</label>
         </C.Container>
